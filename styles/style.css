@@ -2,11 +2,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
 /* common styles */
+
 body {
+  margin: 0;
   font-family: "Poppins", sans-serif;
   background-color: #f3f1ff;
 }
+ul,
+li,
+h1 {
+  margin: 0;
+  padding: 0;
+}
 main {
+  padding: 10px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,6 +34,58 @@ hr {
 }
 
 /* header nav style  */
+header {
+  background: #562eff;
+}
+
+nav {
+  padding: 25px 30px;
+  width: 925px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .site-logo img {
+  width: 42px;
+  height: 50px;
+}
+nav .site-logo .logo {
+  font-size: 26px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-left: 8px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav ul .menu {
+  transition: 0.7s;
+}
+nav ul .menu:hover {
+  transform: scale(1.5);
+}
+
 /* top players style */
 
 .top-players {
