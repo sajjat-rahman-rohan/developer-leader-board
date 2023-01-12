@@ -1,0 +1,71 @@
+/* Media Queries */
+
+/* Mobile Devices */
+
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .player,
+  .blog {
+    flex-direction: column;
+  }
+
+  .blog .thumbnail img {
+    width: 240px;
+    height: 120px;
+  }
+
+  .courses {
+    grid-row-gap: 26px;
+  }
+
+  .blog-info {
+    margin: 0;
+  }
+  .fa-star,
+  .course-info span,
+  .course-info .course-duration {
+    font-size: 12px;
+  }
+  .course-info .course-duration {
+    margin-left: 30px;
+  }
+}
+
+/* tablet devices */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .players,
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog .thumbnail img {
+    width: 240px;
+    height: 120px;
+  }
+
+  .courses {
+    grid-row-gap: 26px;
+  }
+
+  .blog {
+    flex-direction: column;
+  }
+  .blog-info {
+    margin: 0;
+  }
+}
